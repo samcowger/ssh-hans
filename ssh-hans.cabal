@@ -81,7 +81,7 @@ executable ssh-hans-example-client
     build-depends:     base,
                        bytestring,
                        async,
-                       network,
+                       network >= 2.6.3  && < 2.8,
                        ssh-hans
 
     hs-source-dirs:    client
@@ -100,7 +100,7 @@ executable ssh-hans-example-server
                        directory,
                        filepath,
                        memory,
-                       network,
+                       network >= 2.6.3  && < 2.8,
                        setgame,
                        unix,
                        vty,
